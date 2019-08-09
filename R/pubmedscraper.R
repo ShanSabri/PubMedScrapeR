@@ -1,5 +1,5 @@
 #' PubMedScrapeR is a function that will send keyword queries to PubMed, scrape all abstracts that are returned by the query,
-#' and return the most frequently occuring words associated with the keyword. Results are purely composed by words associated with
+#' and return the most frequently occurring words associated with the keyword. Results are purely comprised of words associated with
 #' the keyword from published abstracts on PubMed.
 #'
 #'
@@ -9,7 +9,8 @@
 #' @param verbose provides information about when querying PubMed API
 #'
 #' @return a \code{list} of \code{data.frames} containing the \code{top_n} most frequently occuring words
-#' found in PubMed abstracts given \code{keyword}
+#' found in PubMed abstracts given \code{keyword}. The column name for each element in the list corresponds to the
+#' search keywork and number of abstracts, delimited by an underscore.
 #' @importFrom RISmed EUtilsSummary EUtilsGet AbstractText
 #' @importFrom utils data head write.table
 #'

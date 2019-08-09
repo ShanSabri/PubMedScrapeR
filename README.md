@@ -15,6 +15,7 @@ devtools::install_github("ShanSabri/PubMedScrapeR")
 ## Usage
 
 ```R
+> library(PubMedScrapeR)
 > results <- PubMedScrapeR::PubMedScrapeR(keyword = c("Shan Sabri", "asdfjkj;", "Nanog"),
                                           top_n = 2000, 
                                           verbose = FALSE)
